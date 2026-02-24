@@ -13,6 +13,7 @@ resource "aws_lambda_function" "skip" {
       secret_key = ""
     }
   }
+  code_signing_config_arn = "CKV_ANY"
 }
 
 resource "aws_lambda_function" "wrong_skip" {
